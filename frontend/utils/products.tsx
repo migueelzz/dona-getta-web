@@ -12,13 +12,13 @@ export const products = [
         color: "White",
         colorCode: "#FFFFFF",
         image:
-          "https://leoscherer.com.br/wp-content/uploads/2022/10/iPhone-14-Azul.png",
+          "https://cdn.dondoca.com.br/wp-content/uploads/2023/09/dondoca_com_br-macacao-decote-transpasse-com-amarracao-trancada-laranja-img-6849.jpg",
       },
       {
         color: "Gray",
         colorCode: "#808080",
         image:
-          "https://leoscherer.com.br/wp-content/uploads/2022/10/iPhone-14-Azul.png",
+          "https://cdn.dondoca.com.br/wp-content/uploads/2023/09/dondoca_com_br-macacao-decote-transpasse-com-amarracao-trancada-laranja-img-6849.jpg",
       },
     ],
     reviews: [],
@@ -37,7 +37,7 @@ export const products = [
         color: "Black",
         colorCode: "#000000",
         image:
-          "https://m.media-amazon.com/images/I/51Gn+-NV5iL._AC_SY300_SX300_.jpg",
+          "https://cdn.dondoca.com.br/wp-content/uploads/2023/09/dondoca_com_br-vestido-midi-detalhe-gripier-e-amarracao-trancada-verde-img-6608.jpg",
       },
     ],
     reviews: [
@@ -77,7 +77,7 @@ export const products = [
         color: "Black",
         colorCode: "#000000",
         image:
-          "https://m.media-amazon.com/images/I/41kBmL3zaZL.__AC_SY445_SX342_QL70_ML2_.jpg",
+          "https://cdn.dondoca.com.br/wp-content/uploads/2022/09/dondoca_com_br-img-9550.jpg",
       },
       {
         color: "Blue",
@@ -150,7 +150,7 @@ export const products = [
         color: "Graphite",
         colorCode: " #383838",
         image:
-          "https://m.media-amazon.com/images/I/61ni3t1ryQL.__AC_SX300_SY300_QL70_ML2_.jpg",
+          "https://cdn.dondoca.com.br/wp-content/uploads/2023/09/dondoca_com_br-vestido-midi-detalhe-gripier-e-amarracao-trancada-pink-img-6591-768x768.jpg",
       },
     ],
     reviews: [],
@@ -169,7 +169,7 @@ export const products = [
         color: "Black",
         colorCode: "#000000",
         image:
-          "https://m.media-amazon.com/images/I/61fYIhvPnfL.__AC_SX300_SY300_QL70_ML2_.jpg",
+          "https://cdn.dondoca.com.br/wp-content/uploads/2023/09/dondoca_com_br-vestido-midi-detalhe-gripier-e-amarracao-trancada-azul-img-6611.jpg",
       },
       {
         color: "Silver",
