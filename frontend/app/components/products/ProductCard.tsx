@@ -5,6 +5,7 @@ import { truncate } from "@/utils/truncate";
 import { Rating } from "@mui/material";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { FaCartPlus } from "react-icons/fa";
 
 
@@ -13,6 +14,11 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({data}) => {
+    const [isShow, setIsShow] = useState(false);
+
+    const onMouseEnter = () => setIsShow(true);
+    const onMouseLeave = () => setIsShow(false);
+
     const productRating = data.reviews.reduce((acc: number, item: any) => item.rating + acc, 0) / data.reviews.length
 
     const router = useRouter();
@@ -20,16 +26,27 @@ const ProductCard: React.FC<ProductCardProps> = ({data}) => {
     return ( 
         <div
             onClick={() => router.push(`/product/${data.id}`)}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
             className="col-span-1 cursor-pointer border-[1.2px] hover:-translate-y-1 transition duration-500 border-slate-200 bg-slate-50-sm p-2 text-zinc-950 text-center text-sm"
             >
             <div className="flex flex-col items-center w-full gap-1">
                 <div className="aspect-square overflow-hidden relative w-full">
-                    <Image
-                        src={data.images[0].image}
+                    {isShow ? (
+                        <Image
+                        src={data.images[1].image}
                         fill
                         className="w-full h-full object-contain"
                         alt={data.name}
                     />
+                    ) : (
+                        <Image
+                        src={data.images[0].image}
+                        fill
+                        className="w-full h-full object-contain "
+                        alt={data.name}
+                    />
+                    )}
                     
                 </div>
 

@@ -39,6 +39,12 @@ export const products = [
         image:
           "https://cdn.dondoca.com.br/wp-content/uploads/2023/09/dondoca_com_br-vestido-midi-detalhe-gripier-e-amarracao-trancada-verde-img-6608.jpg",
       },
+      {
+        color: "Silver",
+        colorCode: "#C0C0C0",
+        image:
+          "https://m.media-amazon.com/images/I/61fYIhvPnfL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      },
     ],
     reviews: [
       {
@@ -151,6 +157,12 @@ export const products = [
         colorCode: " #383838",
         image:
           "https://cdn.dondoca.com.br/wp-content/uploads/2023/09/dondoca_com_br-vestido-midi-detalhe-gripier-e-amarracao-trancada-pink-img-6591-768x768.jpg",
+      },
+      {
+        color: "Silver",
+        colorCode: "#C0C0C0",
+        image:
+          "https://m.media-amazon.com/images/I/61fYIhvPnfL.__AC_SX300_SY300_QL70_ML2_.jpg",
       },
     ],
     reviews: [],

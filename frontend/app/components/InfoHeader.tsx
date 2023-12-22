@@ -5,7 +5,7 @@ import { BsBox2 } from "react-icons/bs";
 
 const InfoHeader = () => {
     return ( 
-        <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 mb-24">
+        <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6 pb-6 mb-6 border-b border-zinc-400">
             <div className="flex items-center justify-center mb-6 md:mb-0">
                 <LiaShippingFastSolid size={30} />
                 <div className="px-4">
