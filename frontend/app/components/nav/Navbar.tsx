@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import Container from "../Container";
 import Image from "next/image";
@@ -7,15 +9,21 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { IoWalletOutline } from "react-icons/io5";
+
+
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
+import NavbarMobile from "./NavbarMobile";
 
 const Navbar = () => {
+
     return (
-        <div> 
-            <div className="bg-zinc-950 text-zinc-200 text-xs p-4">
+        <div>
+            <NavbarMobile />
+ 
+            <div className="bg-zinc-950 text-zinc-200 text-xs p-4 hidden md:block">
                 <Container>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
@@ -36,7 +44,7 @@ const Navbar = () => {
             <div className="sticky top-0 w-full bg-white z-30 shadow-lg">
                 <div className="py-4 max-w-[1280px] mx-auto">
                     <Container>
-                        <div className="flex justify-between items-center text-colors-gold-dark text-xs mb-8">
+                        <div className="md:flex hidden justify-between items-center text-colors-gold-dark text-xs mb-8">
                             <div className="flex items-center gap-4">
                                 <div className="flex items-center gap-2">
                                     <FaWhatsapp size={16} />
@@ -59,8 +67,8 @@ const Navbar = () => {
                         </div>
                     </Container>
                     <Container>
-                        <div className="flex items-center justify-between gap-3 md:gap-0">
-                            <Link href="/">
+                        <div className="flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
+                            <Link className="mx-auto md:mx-0" href="/">
                                 <Image 
                                     src='/logo_dona_getta.png'
                                     width={300}
@@ -69,7 +77,7 @@ const Navbar = () => {
                                 />
                             </Link>
 
-                            <div className="hidden md:block text-sm uppercase w-[40%]">
+                            <div className=" text-sm uppercase w-full px-4 md:px-0 md:w-[40%]">
                                 <div className="flex items-end justify-between gap-2 p-3 border-b border-zinc-950">
                                     <input className="w-full outline-none placeholder:text-zinc-700" type="text" placeholder="O que você procura?" />
                                     <div className="text-zinc-700 ml-6">
@@ -77,19 +85,17 @@ const Navbar = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-8 md:gap-12">
-                                <div className="cursor-pointer">
-                                    <FiShoppingBag size={25} />
-                                </div>
+                            <div className="hidden md:flex items-center gap-8 md:gap-4">
                                 <div className="cursor-pointer">
                                     <FaRegUserCircle size={25} />
                                 </div>
-                                <div className="lg:hidden cursor-pointer">
-                                    <GiHamburgerMenu size={25} />
+                                <div className="cursor-pointer">
+                                    <FiShoppingBag size={25} />
                                 </div>
+                                
                             </div>
                         </div>
-                        <div className="text-xs uppercase font-medium text-zinc-950">
+                        <div className="text-xs uppercase font-medium text-zinc-950 hidden md:block py-3">
                             <div className="w-full my-6 mx-auto">
                                 <div className="grid grid-cols-10 text-center">
                                     <div className="relative group">

@@ -24,7 +24,7 @@ const ProductImage: React.FC<ProductImageProps> = ({
                     fill
                 />
             </div>
-            <div className="flex items-center justify-center gap-4 cursor-pointer">
+            <div className="flex items-center justify-center gap-2 cursor-pointer">
                 {product.images.map((image: SelectedImgType) => {
                     return (
                         <div 

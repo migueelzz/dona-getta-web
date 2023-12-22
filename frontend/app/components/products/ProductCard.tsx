@@ -28,7 +28,7 @@ const ProductCard: React.FC<ProductCardProps> = ({data}) => {
             onClick={() => router.push(`/product/${data.id}`)}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
-            className="col-span-1 cursor-pointer border-[1.2px] hover:-translate-y-1 transition duration-500 border-slate-200 bg-slate-50-sm p-2 text-zinc-950 text-center text-sm"
+            className="col-span-1 cursor-pointer hover:border-[1.2px] hover:-translate-y-1 transition-all duration-500 border-slate-200 bg-slate-50-sm p-2 text-zinc-950 text-center text-sm"
             >
             <div className="flex flex-col items-center w-full gap-1">
                 <div className="aspect-square overflow-hidden relative w-full">

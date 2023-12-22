@@ -19,19 +19,23 @@ const Footer = () => {
         <footer className="text-zinc-900 text-sm mt-16 mx-auto">
             <div className="border-y border-zinc-400">
                 <Container>
-                    <div className="flex flex-col md:flex-row justify-between pt-16 pb-8">
-                        <div className="w-full lg:w-1/4 mb-6 md:mb-0 flex flex-col gap-2">
-                            <FooterTitle>
-                                sobre a loja
-                            </FooterTitle>
-                            <p className="text-sm">
-                                A Dona Getta é uma Loja especializada em Moda Feminina. 
-                                Oferecemos Blusas, Calças, Macacões e mais. Confira Agora!
-                            </p>
-                            <div className="mt-4">
+                    <div className="flex flex-col md:flex-row justify-between pt-16 md:pb-8">
+
+                        <div className="w-full lg:w-1/4 grid grid-rows-2">
+                            <div>
+                                <FooterTitle>
+                                    sobre a loja
+                                </FooterTitle>
+                                <p className="text-sm mt-3">
+                                    A Dona Getta é uma Loja especializada em Moda Feminina. 
+                                    Oferecemos Blusas, Calças, Macacões e mais. Confira Agora!
+                                </p>
+
+                            </div>
+                            <div className="mt-4 mb-4">
                                 <Link href='#'>
                                     <Image
-                                        src='/logo_dona_getta03.png'
+                                        src='/logo_dona_getta02.png'
                                         width={200}
                                         height={200}
                                         alt='Logo' 
@@ -110,14 +114,14 @@ const Footer = () => {
 
             </div>
 
-            <div className="w-full text-zinc-950 text-sm font-light py-2">
+            <div className="w-full text-zinc-950 text-xs md:text-sm font-light mt-2 md:py-2">
                 <Container>
-                    <div className="flex justify-between items-center">
-                        <div>
+                    <div className="grid grid-rows-1 md:grid-cols-2 gap-2 mb-2">
+                        <div className="row-end-2">
                             <p>Suzana Vieira Lemes - Rua Rosaria Mena Barnet, 560 - Lins SP - CNPJ: 12.123.123/0001-02</p>
                             <p>&copy; Todos os direitos reservados. {new Date().getFullYear()}</p>
                         </div>
-                        <p className="text-zinc-950">Desenvolvido por 
+                        <p className="text-zinc-950 row-end-4 md:row-end-2 md:col-end-4">Desenvolvido por 
                             <Link className="underline" href='https://github.com/migueelzz' target="_blank"> Miguel Lemes</Link>
                         </p>
                     </div>
